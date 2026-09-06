@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyForge Aviation | Falcon X1</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          accent: '#ea4c3d',
+          link: '#2b6cb0'
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html{scroll-behavior:smooth;}
+  .nav-link::after{
+    content:"";
+    position:absolute;
+    bottom:-4px; left:0;
+    width:0; height:2px;
+    background:#111827;
+    transition:width .3s ease;
+  }
+  .nav-link:hover::after{width:100%;}
+  .btn-shine{position:relative; overflow:hidden;}
+  .btn-shine::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,.25);
+    transform:translateX(-100%);
+    transition:transform .4s ease;
+  }
+  .btn-shine:hover::before{transform:translateX(0);}
+</style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+  <div class="w-[92%] max-w-6xl mx-auto flex items-center justify-between py-4">
+    <a href="#home" class="text-xl font-extrabold tracking-tight">SkyForge<span class="text-accent">Aviation</span></a>
+    <nav class="hidden md:flex gap-8 text-sm font-medium">
+      <a href="#home" class="nav-link relative">Home</a>
+      <a href="#specs" class="nav-link relative">Specifications</a>
+      <a href="#reviews" class="nav-link relative">Rating & Reviews</a>
+      <a href="#accessories" class="nav-link relative">Related Products</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <button aria-label="wishlist" class="hover:text-accent transition-colors">♡</button>
+      <button aria-label="cart" class="hover:text-accent transition-colors">🛒</button>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="pt-32 pb-20">
+  <div class="w-[92%] max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+    <div class="relative bg-gray-50 rounded-2xl p-10 flex items-center justify-center">
+      <span class="absolute top-5 left-5 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">-12% OFF</span>
+      <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop" alt="SkyForge Falcon X1" class="max-w-full rounded-xl">
+    </div>
+
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">SkyForge Falcon X1</h1>
+      <p class="text-gray-500 mb-6 leading-relaxed">Built for the skies — precision runway inspection, air traffic monitoring, and airfield surveillance with 8K imaging, 40-minute flight time, and advanced AI obstacle avoidance.</p>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1.5 rounded-full">Professional</span>
+        <span class="bg-green-50 text-green-700 text-xs font-semibold px-3 py-1.5 rounded-full">In Stock</span>
+        <span class="bg-blue-50 text-link text-xs font-semibold px-3 py-1.5 rounded-full">Free Shipping</span>
+      </div>
+
+      <div class="flex items-end gap-3 mb-2">
+        <span class="text-gray-400 line-through text-lg">$2,849</span>
+        <span class="text-3xl font-extrabold text-gray-900">$2,499</span>
+        <span class="text-accent font-semibold text-sm">Save $350</span>
+      </div>
+      <p class="text-gray-400 text-sm mb-8">Or pay in 4 interest-free payments of $624.75</p>
+
+      <div class="flex gap-4">
+        <button class="btn-shine px-8 py-3.5 rounded-full font-semibold bg-gray-900 text-white hover:bg-gray-800 hover:-translate-y-1 transition-all duration-300">Add to Cart</button>
+        <button class="btn-shine px-8 py-3.5 rounded-full font-semibold border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white hover:-translate-y-1 transition-all duration-300">Add to Wishlist</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="specs" class="py-24 bg-gray-50">
+  <div class="w-[92%] max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-3">How We Compare</h2>
+    <p class="text-center text-gray-500 mb-12">See why the SkyForge Falcon X1 leads the professional airport & airfield drone market</p>
+
+    <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-gray-100">
+      <table class="w-full text-sm text-left min-w-[720px]">
+        <thead>
+          <tr class="border-b border-gray-100">
+            <th class="p-5 font-semibold text-gray-500">Feature</th>
+            <th class="p-5 font-bold text-white bg-gray-900 rounded-t-2xl">SkyForge Falcon X1</th>
+            <th class="p-5 font-semibold text-gray-500">AirMaster Pro</th>
+            <th class="p-5 font-semibold text-gray-500">FlightMax 4K</th>
+            <th class="p-5 font-semibold text-gray-500">SkyHawk Elite</th>
+          </tr>
+        </thead>
+        <tbody class="[&>tr]:border-b [&>tr]:border-gray-100 [&>tr:hover]:bg-gray-50 [&>tr]:transition-colors">
+          <tr>
+            <td class="p-5 text-gray-500 flex items-center gap-2">🗼 Air Traffic Compliance</td>
+            <td class="p-5 font-bold text-gray-900 bg-accent/5">✓ FAA/EASA Certified</td>
+            <td class="p-5">FAA Only</td>
+            <td class="p-5">Not Certified</td>
+            <td class="p-5">FAA Only</td>
+          </tr>
+          <tr>
+            <td class="p-5 text-gray-500 flex items-center gap-2">📍 GPS Positioning Accuracy</td>
+            <td class="p-5 font-bold text-gray-900 bg-accent/5">✓ ±1 cm RTK</td>
+            <td class="p-5">±5 cm</td>
+            <td class="p-5">±20 cm</td>
+            <td class="p-5">±10 cm</td>
+          </tr>
+          <tr>
+            <td class="p-5 text-gray-500 flex items-center gap-2">📈 Max Operating Altitude</td>
+            <td class="p-5 font-bold text-gray-900 bg-accent/5">✓ 6,000 m</td>
+            <td class="p-5">5,000 m</td>
+            <td class="p-5">3,500 m</td>
+            <td class="p-5">4,200 m</td>
+          </tr>
+          <tr>
+            <td class="p-5 text-gray-500 flex items-center gap-2">✈️ Flight Time</td>
+            <td class="p-5 font-bold text-gray-900 bg-accent/5">✓ 40 min</td>
+            <td class="p-5">34 min</td>
+            <td class="p-5">28 min</td>
+            <td class="p-5">31 min</td>
+          </tr>
+          <tr>
+            <td class="p-5 text-gray-500 flex items-center gap-2">🛫 Max Range</td>
+            <td class="p-5 font-bold text-gray-900 bg-accent/5">✓ 10 km</td>
+            <td class="p-5">8 km</td>
+            <td class="p-5">6 km</td>
+            <td class="p-5">7 km</td>
+          </tr>
+          <tr>
+            <td class="p-5 text-gray-500 flex items-center gap-2">💨 Wind Resistance</td>
+            <td class="p-5 font-bold text-gray-900 bg-accent/5">✓ Level 7 (up to 61 km/h)</td>
+            <td class="p-5">Level 6</td>
+            <td class="p-5">Level 4</td>
+            <td class="p-5">Level 5</td>
+          </tr>
+          <tr>
+            <td class="p-5 text-gray-500 flex items-center gap-2">🛬 Hangar & Tarmac Avoidance</td>
+            <td class="p-5 font-bold text-gray-900 bg-accent/5">✓ 360° AI</td>
+            <td class="p-5">Front/Back</td>
+            <td class="p-5">Front Only</td>
+            <td class="p-5">Front/Back</td>
+          </tr>
+          <tr>
+            <td class="p-5 text-gray-500 flex items-center gap-2">⚖️ Weight</td>
+            <td class="p-5 font-bold text-gray-900 bg-accent/5">✓ 899g</td>
+            <td class="p-5">920g</td>
+            <td class="p-5">950g</td>
+            <td class="p-5">1050g</td>
+          </tr>
+          <tr>
+            <td class="p-5 text-gray-500 flex items-center gap-2">🌧️ Runway Weather Rating</td>
+            <td class="p-5 font-bold text-gray-900 bg-accent/5">✓ IPX4 (Rain & Fog)</td>
+            <td class="p-5">IPX3</td>
+            <td class="p-5">None</td>
+            <td class="p-5">IPX2</td>
+          </tr>
+          <tr>
+            <td class="p-5 text-gray-500 flex items-center gap-2">💲 Price</td>
+            <td class="p-5 font-bold text-gray-900 bg-accent/5">✓ $2,499</td>
+            <td class="p-5">$2,299</td>
+            <td class="p-5">$1,899</td>
+            <td class="p-5">$2,099</td>
+          </tr>
+          <tr>
+            <td class="p-5 text-gray-500 flex items-center gap-2">⭐ Overall Rating</td>
+            <td class="p-5 pb-6 font-bold text-gray-900 bg-accent/5 rounded-b-2xl">✓ 4.9/5</td>
+            <td class="p-5">4.3/5</td>
+            <td class="p-5">3.9/5</td>
+            <td class="p-5">4.1/5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-8 text-center bg-gray-900 text-white rounded-2xl py-6 px-8">
+      <p class="font-semibold">SkyForge Falcon X1 — Best performance, features, and value</p>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="py-24">
+  <div class="w-[92%] max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-3">What Our Customers Say</h2>
+    <p class="text-center text-gray-500 mb-12">Real experiences from airport crews and aviation professionals</p>
+
+    <div class="grid md:grid-cols-3 gap-10 mb-16">
+      <div class="text-center md:border-r border-gray-100">
+        <div class="text-5xl font-extrabold mb-2">4.9</div>
+        <div class="text-accent mb-2">★★★★★</div>
+        <p class="text-gray-500 text-sm">Based on 2,847 reviews</p>
+      </div>
+      <div class="space-y-2">
+        <div class="flex items-center gap-3 text-sm">
+          <span class="w-16 text-gray-500">5 star</span>
+          <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gray-900" style="width:78%"></div></div>
+          <span class="w-10 text-gray-500">78%</span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <span class="w-16 text-gray-500">4 star</span>
+          <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gray-900" style="width:15%"></div></div>
+          <span class="w-10 text-gray-500">15%</span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <span class="w-16 text-gray-500">3 star</span>
+          <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gray-900" style="width:5%"></div></div>
+          <span class="w-10 text-gray-500">5%</span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <span class="w-16 text-gray-500">2 star</span>
+          <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gray-900" style="width:1.5%"></div></div>
+          <span class="w-10 text-gray-500">1.5%</span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <span class="w-16 text-gray-500">1 star</span>
+          <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gray-900" style="width:0.5%"></div></div>
+          <span class="w-10 text-gray-500">0.5%</span>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center gap-4">
+        <div>
+          <div class="text-2xl font-extrabold">96%</div>
+          <p class="text-gray-500 text-sm">Would recommend</p>
+        </div>
+        <div>
+          <div class="text-2xl font-extrabold">4.8</div>
+          <p class="text-gray-500 text-sm">Quality rating</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="reviewsList" class="grid md:grid-cols-2 gap-6">
+      <div class="bg-gray-50 rounded-2xl p-6">
+        <div class="flex items-center justify-between mb-3">
+          <div>
+            <h3 class="font-bold">Marcus Chen</h3>
+            <span class="text-gray-400 text-xs">Airport Operations Manager</span>
+          </div>
+          <span class="text-accent">★★★★★</span>
+        </div>
+        <p class="text-gray-500 text-sm mb-3">"The SkyForge Falcon X1 has revolutionized our runway and airfield inspections. The image quality is stunning and the flight stability is unmatched. Best investment we've made for the terminal team."</p>
+        <div class="flex items-center gap-3 text-xs text-gray-400">
+          <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded-full font-semibold">Verified Purchase</span>
+          <span>3 months ago</span>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 rounded-2xl p-6">
+        <div class="flex items-center justify-between mb-3">
+          <div>
+            <h3 class="font-bold">Thomas Anderson</h3>
+            <span class="text-gray-400 text-xs">Air Traffic Control Technician</span>
+          </div>
+          <span class="text-accent">★★★★★</span>
+        </div>
+        <p class="text-gray-500 text-sm mb-3">"The automated flight modes make monitoring runway markings and approach lighting incredibly efficient. It's now part of our routine airfield checks."</p>
+        <div class="flex items-center gap-3 text-xs text-gray-400">
+          <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded-full font-semibold">Verified Purchase</span>
+          <span>2 months ago</span>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 rounded-2xl p-6">
+        <div class="flex items-center justify-between mb-3">
+          <div>
+            <h3 class="font-bold">David Rodriguez</h3>
+            <span class="text-gray-400 text-xs">Aviation Safety Inspector</span>
+          </div>
+          <span class="text-accent">★★★★★</span>
+        </div>
+        <p class="text-gray-500 text-sm mb-3">"The obstacle avoidance system gives me confidence flying near hangars and taxiways, and the gimbal stabilization produces buttery smooth footage on every inspection run."</p>
+        <div class="flex items-center gap-3 text-xs text-gray-400">
+          <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded-full font-semibold">Verified Purchase</span>
+          <span>1 month ago</span>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 rounded-2xl p-6">
+        <div class="flex items-center justify-between mb-3">
+          <div>
+            <h3 class="font-bold">Kyle Johnson</h3>
+            <span class="text-gray-400 text-xs">Ground Crew Supervisor</span>
+          </div>
+          <span class="text-accent">★★★★★</span>
+        </div>
+        <p class="text-gray-500 text-sm mb-3">"The mobile app is so intuitive that our ground crew was flying survey routes over the apron within minutes of unboxing. Highly recommend for airport ground operations."</p>
+        <div class="flex items-center gap-3 text-xs text-gray-400">
+          <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded-full font-semibold">Verified Purchase</span>
+          <span>2 weeks ago</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="#" class="text-link font-semibold hover:underline">Load More Reviews</a>
+    </div>
+  </div>
+</section>
+
+<section id="accessories" class="py-24 bg-gray-50">
+  <div class="w-[92%] max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-3">Complete Your Setup</h2>
+    <p class="text-center text-gray-500 mb-12">Essential gear for airfield and airport flight operations</p>
+
+    <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
+
+      <div class="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+        <span class="absolute top-3 left-3 z-10 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">-15% OFF</span>
+        <div class="overflow-hidden h-44 bg-gray-50">
+          <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=500&auto=format&fit=crop" alt="Tower Control Remote" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        </div>
+        <div class="p-5">
+          <span class="inline-block bg-gray-100 text-gray-600 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Accessory</span>
+          <h3 class="font-bold mb-1">Tower Control Remote</h3>
+          <p class="text-gray-500 text-sm mb-3">Enhanced remote with 7" HD display, live ATC-style telemetry, and extended battery life.</p>
+          <div class="flex items-center justify-between">
+            <span class="font-bold">$599</span>
+            <button class="btn-shine text-sm font-semibold px-4 py-2 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-all duration-300">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+        <span class="absolute top-3 left-3 z-10 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">-10% OFF</span>
+        <div class="overflow-hidden h-44 bg-gray-50">
+          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=500&auto=format&fit=crop" alt="Travel Case" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        </div>
+        <div class="p-5">
+          <span class="inline-block bg-gray-100 text-gray-600 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Essential</span>
+          <h3 class="font-bold mb-1">Airport-Grade Case</h3>
+          <p class="text-gray-500 text-sm mb-3">Waterproof, airline-checked-baggage-ready aluminum case with custom foam inserts for safe transport.</p>
+          <div class="flex items-center justify-between">
+            <span class="font-bold">$299</span>
+            <button class="btn-shine text-sm font-semibold px-4 py-2 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-all duration-300">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+        <span class="absolute top-3 left-3 z-10 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">-20% OFF</span>
+        <div class="overflow-hidden h-44 bg-gray-50">
+          <img src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?q=80&w=500&auto=format&fit=crop" alt="Battery Kit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        </div>
+        <div class="p-5">
+          <span class="inline-block bg-gray-100 text-gray-600 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Power</span>
+          <h3 class="font-bold mb-1">Extended Flight Kit</h3>
+          <p class="text-gray-500 text-sm mb-3">3 additional batteries with runway-side charging hub for extended airfield patrols.</p>
+          <div class="flex items-center justify-between">
+            <span class="font-bold">$449</span>
+            <button class="btn-shine text-sm font-semibold px-4 py-2 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-all duration-300">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+        <span class="absolute top-3 left-3 z-10 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">-8% OFF</span>
+        <div class="overflow-hidden h-44 bg-gray-50">
+          <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?q=80&w=500&auto=format&fit=crop" alt="Safety Kit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        </div>
+        <div class="p-5">
+          <span class="inline-block bg-gray-100 text-gray-600 text-xs font-semibold px-2.5 py-1 rounded-full mb-2">Safety</span>
+          <h3 class="font-bold mb-1">Runway Safety Kit</h3>
+          <p class="text-gray-500 text-sm mb-3">Propeller guards and reinforced landing gear built for tarmac and airfield operations.</p>
+          <div class="flex items-center justify-between">
+            <span class="font-bold">$129</span>
+            <button class="btn-shine text-sm font-semibold px-4 py-2 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-all duration-300">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="#" class="text-link font-semibold hover:underline">View All Accessories</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-gray-300 pt-16">
+  <div class="w-[92%] max-w-6xl mx-auto grid md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+    <div>
+      <div class="text-xl font-extrabold text-white mb-3">SkyForge<span class="text-accent">Aviation</span></div>
+      <p class="text-sm text-gray-400">Leading the future of aerial technology with innovative drone solutions for professionals and enthusiasts worldwide.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-bold mb-4">Products</h4>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Falcon X1</a>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Mini</a>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Enterprise</a>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Accessories</a>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Software</a>
+    </div>
+    <div>
+      <h4 class="text-white font-bold mb-4">Support</h4>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Help Center</a>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">User Manual</a>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Firmware Updates</a>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Warranty</a>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Contact Support</a>
+    </div>
+    <div>
+      <h4 class="text-white font-bold mb-4">Company</h4>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">About Us</a>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Careers</a>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Press</a>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Partners</a>
+      <a href="#" class="block py-1 text-sm hover:text-white transition-colors">Investors</a>
+    </div>
+  </div>
+  <div class="w-[92%] max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between py-6 gap-4 text-xs text-gray-500">
+    <p>© 2025 SkyForge Aviation. All rights reserved. <a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms of Service</a></p>
+    <div class="flex gap-3 text-gray-400">
+      <span>PayPal</span><span>Mastercard</span><span>Visa</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.btn-shine').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.textContent.includes('Add to Cart')) {
+        alert('Added to cart!');
+      }
+    });
+  });
+</script>
+</body>
+</html>
